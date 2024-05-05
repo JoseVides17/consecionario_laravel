@@ -1,0 +1,30 @@
+/* Estilos para imágenes */
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.img-container:hover .overlay {
+    opacity: 1; /* Mostrar la superposición al pasar el ratón */
+}
